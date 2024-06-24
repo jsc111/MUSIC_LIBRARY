@@ -1,0 +1,133 @@
+/* Reset some default margin and padding for the form */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the form container */
+body {
+    /* font-family: Arial, sans-serif; */
+    /* background-color: #f2f2f2; */
+    /* padding: 20px; */
+                                                            /*first three lines were already there*/
+    background-image: url('IMG_0223.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #f2f2f2;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    /* background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+                                                           /*start lines were already there rest were later added*/    
+    background-color:rgba(255, 255, 255, 0.2); /* Adjust the transparency by modifying the last value */
+    padding: 20px;
+    backdrop-filter: blur(8px);  
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Add some spacing between form elements */
+form label,
+form input,
+form select,
+form textarea {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Adjust styles for required fields */
+label[for="title"]:after,
+label[for="artist_id"]:after,
+label[for="release_date"]:after,
+label[for="lyrics_content"]:after {
+    content: " *";
+    color: red;
+}
+
+/* Style the form on smaller screens */
+@media screen and (max-width: 600px) {
+    form {
+        margin: 10px;
+    }
+}
+
+/*******************************************************************************88*/
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: grid;
+            grid-template-areas:
+                "homeButton headerText";
+            grid-template-columns: auto 1fr;
+            align-items: center; /* Align items vertically in the center */
+        }
+
+h2.head-title{
+    margin: 0;
+    text-align: center;
+    color: white   
+}
+
+header.a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px; /* Add some padding to the right of the home button */
+}
+
+.home-button{
+    padding: 10px;
+    background-color: #4e4e4e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right:  10px;
+}
