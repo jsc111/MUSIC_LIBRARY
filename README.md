@@ -1,2 +1,2 @@
 # MUSIC_LIBRARY
-Music Library in which you can add new songs to the list, its details and lyrics and can also listen to that song through the link
+Music Library which lets user add and maintain list of songs and its details.
